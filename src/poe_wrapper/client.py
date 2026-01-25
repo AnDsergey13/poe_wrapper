@@ -5,7 +5,6 @@
 """
 
 import os
-import json
 import aiohttp
 from dotenv import load_dotenv
 from dataclasses import dataclass, field
