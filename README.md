@@ -5,7 +5,7 @@
 ## Установка
 
 ```bash
-uv pip install "git+ssh://git@codeberg.org/femto/poe_wrapper.git"
+uv add "git+ssh://git@codeberg.org/femto/poe_wrapper.git"
 ```
 
 Или в `pyproject.toml` вашего проекта:
