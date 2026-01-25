@@ -1,11 +1,12 @@
 # poe-wrapper
 
 Асинхронная Python-обёртка для Poe REST API.
+Упрощает вызовы и работу с API.
 
 ## Установка
 
 ```bash
-uv pip install "git+ssh://git@codeberg.org/femto/poe_wrapper.git"
+uv add "git+ssh://git@codeberg.org/femto/poe_wrapper.git"
 ```
 
 Или в `pyproject.toml` вашего проекта:
@@ -49,7 +50,7 @@ async def main():
     # С параметрами
     response = await client.send_message(
         "Объясни квантовую физику",
-        model="Claude-Sonnet-4",
+        model="gemini-3-flash",
         temperature=0.5,
         max_tokens=4096
     )
@@ -71,7 +72,7 @@ asyncio.run(main())
 
 | Параметр | Тип | По умолчанию | Описание |
 |----------|-----|--------------|----------|
-| `default_model` | `str` | `"Claude-Sonnet-4"` | Модель по умолчанию |
+| `default_model` | `str` | `"gemini-3-flash"` | Модель по умолчанию |
 | `base_url` | `str` | `"https://api.poe.com"` | URL API |
 
 ### Методы

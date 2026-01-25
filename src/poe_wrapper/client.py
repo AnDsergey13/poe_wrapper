@@ -5,7 +5,6 @@
 """
 
 import os
-import json
 import aiohttp
 from dotenv import load_dotenv
 from dataclasses import dataclass, field
@@ -25,7 +24,7 @@ class PoeClient:
     """Клиент для работы с Poe API."""
     
     base_url: str = "https://api.poe.com"
-    default_model: str = "Claude-Sonnet-4"
+    default_model: str = "gemini-3-flash"
     api_key: str = field(default_factory=lambda: POE_API_KEY)
     
     # Статистика

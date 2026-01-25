@@ -1,6 +1,6 @@
 [project]
 name = "poe-wrapper"
-version = "0.1.0"
+version = "0.1.1"
 description = "Асинхронная прослойка для Poe REST API"
 readme = "README.md"
 authors = [
