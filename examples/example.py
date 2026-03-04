@@ -4,7 +4,7 @@ from poe_wrapper import PoeClient
 
 async def main():
     # Создаём клиент
-    client = PoeClient(default_model="gemini-2.5-flash-lite")
+    client = PoeClient(default_model="gemini-3.1-flash-lite")
     
     # Проверяем баланс
     balance = await client.get_balance()
